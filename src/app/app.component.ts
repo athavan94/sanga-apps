@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import {ReportComponent} from "./report/report.component";
+import {MatToolbarModule} from "@angular/material/toolbar";
 
 @Component({
   standalone: true,
-  imports: [RouterModule, ReportComponent],
+  imports: [RouterModule, MatToolbarModule],
   selector: 'sanga-apps-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
