@@ -2,7 +2,9 @@
 
 ## Angular Material install
 
-- `npm install @angular/material && npx nx g @angular/material:ng-add`
+```bash
+npm install @angular/material && npx nx g @angular/material:ng-add
+```
 
 ## Run unittest
 
