@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { NxWelcomeComponent } from './nx-welcome.component';
+import {ReportComponent} from "./report/report.component";
 
 @Component({
   standalone: true,
-  imports: [NxWelcomeComponent, RouterModule],
+  imports: [RouterModule, ReportComponent],
   selector: 'sanga-apps-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
