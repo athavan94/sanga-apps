@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { MatToolbarModule } from '@angular/material/toolbar';
-import { SidenavComponent } from '@sanga-apps/sidenav';
+import { CoreUiComponent } from '@sanga-apps/core-ui';
 
 @Component({
   standalone: true,
-  imports: [RouterModule, MatToolbarModule, SidenavComponent],
+  imports: [RouterModule, CoreUiComponent],
   selector: 'sanga-apps-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],

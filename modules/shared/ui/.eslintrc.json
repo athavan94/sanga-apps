@@ -21,7 +21,7 @@
           "error",
           {
             "type": "element",
-            "prefix": "sanga-apps",
+            "prefix": "sanga",
             "style": "kebab-case"
           }
         ]

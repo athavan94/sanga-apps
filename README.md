@@ -36,8 +36,18 @@ npx nx g @nx/angular:component <component-name> --directory=src/app/<component-n
 
 _Note: Remove `--dry-run` to actually create the component_
 
-## Create lobraries
+## Create libraries
 
 ```bash
 nx g @nx/angular:library shared-ui --directory=modules/shared/ui --standalone
+```
+
+## Run prettier
+
+```bash
+npx prettier . --check
+```
+
+```bash
+npx prettier . --write
 ```
