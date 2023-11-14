@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import {MatToolbarModule} from "@angular/material/toolbar";
-import {SidenavComponent} from "@sanga-apps/sidenav";
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { SidenavComponent } from '@sanga-apps/sidenav';
 
 @Component({
   standalone: true,

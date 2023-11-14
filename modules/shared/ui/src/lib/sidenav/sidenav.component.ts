@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import {MatSidenavModule} from "@angular/material/sidenav";
+import { MatSidenavModule } from '@angular/material/sidenav';
 
 @Component({
   selector: 'sanga-apps-shared-lib-sidenav',
