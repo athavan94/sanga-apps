@@ -1,25 +1,16 @@
 <mat-toolbar>
-  <button mat-icon-button (click)="isExpanded = !isExpanded">
+  <button mat-icon-button (click)="sidenav.toggle()">
     <mat-icon>menu</mat-icon>
   </button>
   <h1>SANGA Apps</h1>
 </mat-toolbar>
 
 <mat-sidenav-container class="sanga-core-ui-sidenav-container" autosize>
-  <mat-sidenav
-    #sidenav
-    mode="side"
-    opened
-    class="sanga-core-ui-sidenav"
-    (mouseenter)="mouseenter()"
-    (mouseleave)="mouseleave()"
-  >
+  <mat-sidenav #sidenav mode="side" opened class="sanga-core-ui-sidenav">
     <mat-nav-list>
-      <mat-list-item (click)="showSubmenu = !showSubmenu">
+      <mat-list-item>
         <mat-icon>home</mat-icon>
-        <span class="sanga-core-ui-full-width" *ngIf="isExpanded || isShowing">
-          Parent Menu
-        </span>
+        <span class="sanga-core-ui-full-width"> Home </span>
       </mat-list-item>
     </mat-nav-list>
   </mat-sidenav>
