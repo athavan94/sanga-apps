@@ -1,5 +1,9 @@
 # SangaApps
 
+[![Dev](https://github.com/athavan94/sanga-apps/actions/workflows/dev-pipeline.yml/badge.svg)](https://github.com/athavan94/sanga-apps/actions/workflows/dev-pipeline.yml)
+
+[![Main](https://github.com/athavan94/sanga-apps/actions/workflows/main-pipeline.yml/badge.svg)](https://github.com/athavan94/sanga-apps/actions/workflows/main-pipeline.yml)
+
 ## Angular Material install
 
 ```bash
