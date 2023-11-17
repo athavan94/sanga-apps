@@ -68,7 +68,8 @@ _Note: Remove `--dry-run` to actually create the component_
 ## Create libraries
 
 ```bash
-nx g @nx/angular:library button --directory=libs/shared/ui/button --standalone
+nx g @nx/angular:library shared/ui/sidenav --directory=libs/shared/ui/sidenav --standalone
+
 ```
 
 </details>
