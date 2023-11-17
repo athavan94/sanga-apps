@@ -1,9 +1,9 @@
 /* eslint-disable */
 export default {
-  displayName: 'sidenav',
+  displayName: 'shared/ui/toolbar',
   preset: '../../../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
-  coverageDirectory: '../../../../coverage/libs/shared/ui/sidenav',
+  coverageDirectory: '../../../../coverage/libs/shared/ui/toolbar',
   transform: {
     '^.+\\.(ts|mjs|js|html)$': [
       'jest-preset-angular',

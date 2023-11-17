@@ -15,7 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@sanga-apps/sidenav": ["libs/shared/ui/sidenav/src/index.ts"]
+      "@sanga-apps/shared/ui/toolbar": ["libs/shared/ui/toolbar/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
