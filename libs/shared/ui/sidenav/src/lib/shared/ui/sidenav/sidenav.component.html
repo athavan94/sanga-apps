@@ -1,9 +1,19 @@
-<mat-sidenav-container>
-    <mat-sidenav mode="side" opened>
-        Test
-    </mat-sidenav>
+<mat-toolbar>
+  <button mat-icon-button (click)="sidenav.toggle()">
+    <mat-icon> menu </mat-icon>
+  </button>
+  <h1>Hello World</h1>
+</mat-toolbar>
 
-    <mat-sidenav-content>
-        Test
-    </mat-sidenav-content>
+<mat-sidenav-container class="sanga-core-ui-sidenav-container" autosize>
+  <mat-sidenav #sidenav mode="side" opened class="sanga-core-ui-sidenav">
+    <mat-nav-list>
+      <mat-icon>home</mat-icon>
+      <span class="sanga-core-ui-full-width"> Parent Menu </span>
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <mat-sidenav-content class="sanga-core-ui-sidenav-content">
+    <ng-content></ng-content>
+  </mat-sidenav-content>
 </mat-sidenav-container>
