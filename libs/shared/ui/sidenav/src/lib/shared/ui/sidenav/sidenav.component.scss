@@ -1,16 +1,18 @@
-.sanga-core-ui-sidenav-container {
+.sanga-sidenav-container {
 }
 
-.sanga-core-ui-sidenav {
+.sanga-sidenav {
 }
 
-.sanga-core-ui-sidenav-content {
+.sanga-sidenav-content {
   display: flex;
   height: 100%;
   align-items: center;
   justify-content: center;
 }
 
-.sanga-core-ui-full-width {
-  width: 100%;
+.sanga-sidenav-label {
+  padding-top: 5px;
+  position: absolute;
+  padding-left: 15px;
 }
