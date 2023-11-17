@@ -15,7 +15,6 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@sanga-apps/core-ui": ["modules/shared/ui/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
