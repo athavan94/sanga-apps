@@ -1,6 +1,6 @@
 <mat-toolbar>
   <button mat-icon-button (click)="sidenav.toggle()">
-    <mat-icon> menu </mat-icon>
+    <mat-icon> menu</mat-icon>
   </button>
   <h1>Hello World</h1>
 </mat-toolbar>
@@ -9,9 +9,13 @@
   <mat-sidenav #sidenav mode="side" opened class="sanga-sidenav">
     <mat-nav-list>
       <mat-action-list *ngFor="let router of routerList">
-        <mat-list-item [routerLink]="router.link">
-          <mat-icon>{{router.icon}}</mat-icon>
-          <span class="sanga-sidenav-label">{{router.name}}</span>
+        <mat-list-item
+          [routerLink]="router.link"
+          routerLinkActive="active"
+          class="parent"
+        >
+          <mat-icon>{{ router.icon }}</mat-icon>
+          <p>{{ router.name }}</p>
         </mat-list-item>
       </mat-action-list>
     </mat-nav-list>

@@ -1,9 +1,9 @@
 /* eslint-disable */
 export default {
-  displayName: 'shared/ui/sidenav',
-  preset: '../../../../jest.preset.js',
+  displayName: 'models',
+  preset: '../../jest.preset.js',
   setupFilesAfterEnv: ['<rootDir>/src/test-setup.ts'],
-  coverageDirectory: '../../../../coverage/libs/shared/ui/sidenav',
+  coverageDirectory: '../../coverage/libs/data',
   transform: {
     '^.+\\.(ts|mjs|js|html)$': [
       'jest-preset-angular',

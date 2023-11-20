@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { SidenavComponent } from '@sanga-apps/sidenav';
-import {routerList} from "./app.routes";
+import { routerList } from './app.routes';
+import { SidenavRoute } from '@sanga-apps/models';
 
 @Component({
   standalone: true,
@@ -12,5 +13,5 @@ import {routerList} from "./app.routes";
 })
 export class AppComponent {
   title = 'sanga-apps';
-  routerList = routerList;
+  routerList: SidenavRoute[] = routerList;
 }

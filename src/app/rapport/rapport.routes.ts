@@ -1,10 +1,9 @@
-import {RapportComponent} from "./rapport.component";
-import {Routes} from "@angular/router";
+import { RapportComponent } from './rapport.component';
+import { Routes } from '@angular/router';
 
 export const rapportRoutes: Routes = [
-    {
-        path: '',
-        component: RapportComponent,
-        children: []
-    }
-]
+  {
+    path: '',
+    component: RapportComponent,
+  },
+];

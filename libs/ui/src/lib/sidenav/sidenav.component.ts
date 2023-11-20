@@ -1,27 +1,29 @@
-import {Component, Input} from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
-import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatListModule } from '@angular/material/list';
-import {RouterLink} from "@angular/router";
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { RouterLink, RouterLinkActive } from '@angular/router';
+import { SidenavRoute } from '@sanga-apps/models';
 
 @Component({
-  selector: 'sanga-shared-ui-sidenav',
+  selector: 'sanga-ui-sidenav',
   standalone: true,
   imports: [
     CommonModule,
-    MatSidenavModule,
     MatButtonModule,
     MatIconModule,
-    MatToolbarModule,
     MatListModule,
+    MatSidenavModule,
+    MatToolbarModule,
     RouterLink,
+    RouterLinkActive,
   ],
   templateUrl: './sidenav.component.html',
   styleUrls: ['./sidenav.component.scss'],
 })
 export class SidenavComponent {
-  @Input() routerList = [];
+  @Input() routerList: SidenavRoute[] = [];
 }
