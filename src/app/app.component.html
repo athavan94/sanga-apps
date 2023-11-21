@@ -1,5 +1,5 @@
-<sanga-shared-lib-core-ui>
-  <div class="sanga-main-container">Tests</div>
-</sanga-shared-lib-core-ui>
-
-<router-outlet></router-outlet>
+<sanga-ui-sidenav [routerList]="routerList">
+  <div class="sanga-main-container">
+    <router-outlet></router-outlet>
+  </div>
+</sanga-ui-sidenav>

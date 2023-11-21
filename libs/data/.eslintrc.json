@@ -1,5 +1,5 @@
 {
-  "extends": ["../../../.eslintrc.base.json"],
+  "extends": ["../../.eslintrc.base.json"],
   "ignorePatterns": ["!**/*"],
   "overrides": [
     {
@@ -21,7 +21,7 @@
           "error",
           {
             "type": "element",
-            "prefix": "sanga",
+            "prefix": "sanga-apps",
             "style": "kebab-case"
           }
         ]

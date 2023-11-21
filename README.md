@@ -4,11 +4,19 @@
 
 [![Main](https://github.com/athavan94/sanga-apps/actions/workflows/main-pipeline.yml/badge.svg)](https://github.com/athavan94/sanga-apps/actions/workflows/main-pipeline.yml)
 
+<details>
+<summary> Installation </summary>
+
 ## Angular Material install
 
 ```bash
 npm install @angular/material && npx nx g @angular/material:ng-add
 ```
+
+</details>
+
+<details>
+<summary> Testing & code analyse </summary>
 
 ## Run unittest
 
@@ -34,6 +42,21 @@ nx e2e e2e
 nx run-many -t test lint e2e
 ```
 
+## Run prettier
+
+```bash
+npx prettier . --check
+```
+
+```bash
+npx prettier . --write
+```
+
+</details>
+
+<details>
+<summary> Create commands </summary>
+
 ## Create component
 
 ```bash
@@ -45,15 +68,8 @@ _Note: Remove `--dry-run` to actually create the component_
 ## Create libraries
 
 ```bash
-nx g @nx/angular:library shared-ui --directory=modules/shared/ui --standalone
+nx g @nx/angular:library shared/ui/sidenav --directory=libs/shared/ui/sidenav --standalone
+
 ```
 
-## Run prettier
-
-```bash
-npx prettier . --check
-```
-
-```bash
-npx prettier . --write
-```
+</details>
