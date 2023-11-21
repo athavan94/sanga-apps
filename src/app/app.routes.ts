@@ -21,7 +21,7 @@ export const routerList: SidenavRoute[] = [
   {
     name: 'Home',
     link: 'home',
-    icon: 'home'
+    icon: 'home',
   },
   {
     name: 'Rapport',
@@ -31,6 +31,6 @@ export const routerList: SidenavRoute[] = [
   {
     name: 'Logbook',
     link: 'logbook',
-    icon: 'schedule'
-  }
+    icon: 'schedule',
+  },
 ];
