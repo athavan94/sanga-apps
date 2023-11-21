@@ -1,12 +1,12 @@
-<mat-toolbar>
+<mat-toolbar color="accent">
   <button mat-icon-button (click)="sidenav.toggle()">
     <mat-icon> menu</mat-icon>
   </button>
-  <h1>Hello World</h1>
+  <h1 routerLink="home">SANGA Apps</h1>
 </mat-toolbar>
 
-<mat-sidenav-container class="sanga-sidenav-container" autosize>
-  <mat-sidenav #sidenav mode="side" opened class="sanga-sidenav">
+<mat-sidenav-container autosize>
+  <mat-sidenav #sidenav mode="side" opened>
     <mat-nav-list>
       <mat-action-list *ngFor="let router of routerList">
         <mat-list-item
@@ -14,8 +14,8 @@
           routerLinkActive="active"
           class="parent"
         >
-          <mat-icon>{{ router.icon }}</mat-icon>
-          <p>{{ router.name }}</p>
+          <mat-icon matListItemIcon>{{ router.icon }}</mat-icon>
+          <div matListItemTitle>{{ router.name }}</div>
         </mat-list-item>
       </mat-action-list>
     </mat-nav-list>
